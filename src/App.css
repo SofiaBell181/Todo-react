@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+* {
+     margin: 0;
+     padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: #b9c8dc;
+    font-family: 'Quicksand', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-bg {
+    background-image: url('./image/pexels-s-migaj-747964.jpg');
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 300px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 50px auto 0 auto;
+    max-width: 500px;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-bg h1 {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #ffffff;
+    margin-left: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-bg p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 80px 0 20px 50px;
+}
+
+.btn-del {
+    background-image: url('./image/delete.png');
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-size: contain;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.todo-list {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.todo-text {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    word-break: break-all;
+    color: #03080a;
+}
+
+.todo-item {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(164, 164, 164);
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    overflow: hidden;
+}
+
+.i-user {
+    background-color: rgb(230, 230, 231);
+    width: 100%;
+    padding: 13px 5px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #03080a;
+    border: none;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    word-break: break-all;
+}
+
+.btn-add {
+    background-color: #4193a4;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 13px;
+    font-weight: 300;
+    color: #ffffff;
+    letter-spacing: 0.1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+}
+
+input:checked + span {
+    text-decoration:line-through;
+    color: #013e48bb;
+}
+
+.i-checkbox {
+    cursor: pointer;
 }
